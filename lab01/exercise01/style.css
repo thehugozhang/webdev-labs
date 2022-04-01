@@ -9,3 +9,29 @@ body {
 /*
 Add some style blocks below this line to style the card.
 */
+
+.box-model {
+    border: 1px solid lightgrey;
+    width: 25%;
+    height: auto;
+}
+
+.box-model h2 {
+    padding: 1em;
+    margin: 0;
+}
+
+.box-model img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.box-model p {
+    margin-top: 0;
+}
+
+.box-model div {
+    padding: 1em;
+    margin: 0;
+}
