@@ -54,7 +54,7 @@ Add some style blocks below this line to style the card.
 .box-model button {
     background: #684a98;
     border: none;
-    color: #fff !important;
+    color: #fff;
     padding: 0.8em 1em 0.8em 1em;
     text-transform: uppercase;
     transition: 0.3s ease;
