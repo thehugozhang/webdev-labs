@@ -11,27 +11,76 @@ Add some style blocks below this line to style the card.
 */
 
 .box-model {
-    border: 1px solid lightgrey;
+    border-radius: 16px;
     width: 25%;
     height: auto;
+    text-align: center;
+    background: #F6F6F6;
+    -webkit-box-shadow: 8px 8px 8px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 8px 8px 8px rgba(0, 0, 0, .05);
+    box-shadow: 8px 8px 8px rgb(0 0 0 / 5%);
 }
 
 .box-model h2 {
-    padding: 1em;
     margin: 0;
+    padding: 1em 0 1em 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #444;
+    background: #F6F6F6;
+    border-bottom: dotted 1px #CCC;
 }
 
 .box-model img {
     width: 100%;
     height: auto;
     margin: 0;
+    border-radius: 16px 16px 0 0;
+
 }
 
-.box-model p {
+.box-model .body {
     margin-top: 0;
+    color: #444;
+    line-height: 1.5;
 }
 
 .box-model div {
     padding: 1em;
     margin: 0;
+    background: #fff;
+}
+
+.box-model button {
+    background: #684a98;
+    border: none;
+    color: #fff !important;
+    padding: 0.8em 1em 0.8em 1em;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.box-model button:hover {
+    cursor: pointer;
+    background: #846dac;
+    border: none;
+}
+
+.box-model .footer {
+    background: #684a98;
+    color: white;
+    padding: 24px;
+    margin: 0;
+    border-radius: 0 0 16px 16px;
+}
+
+.box-model .footerlink {
+    color: white;
+}
+
+.box-model .footerlink:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
 }
