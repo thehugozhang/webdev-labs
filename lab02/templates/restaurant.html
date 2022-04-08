@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8"><title>Top Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/280a392f45.js" crossorigin="anonymous"></script>
+    <title>Top Restaurant</title>
+</head>
+<body>
+    {% include 'includes/header.html' %}
+
+    <main>
+        <!-- <p>Search location: {{location}}</p>
+        <p>Search term: {{search_term or 'None Specified'}}</p>
+        <p>Data: {{ restaurant }}</p>
+        <h2>Top Restaurant:</h2> -->
+
+        <div class = "restaurant-card">
+
+            <div class = "card-header">
+                <h3>{{ restaurant.get('name') }}</h3>
+                <p><span>{{ restaurant.get('rating') }} out of 5 <i class="fa-solid fa-star"></i></span> {{ restaurant.get('review_count') }} Reviews</p>
+            </div>
+
+            <div class = "card-img">
+                <img src = "{{ restaurant.get('image_url') }}"/>
+            </div>
+
+            <div class = "card-body">
+                <p><span>{{ restaurant.get('price') }}</span></p>
+                <p><i class="fa-solid fa-location-dot"></i> {{ restaurant.get('display_address') }}</p>
+            </div>
+
+        </div>
+        
+    </main>
+</body>
+</html>
+
